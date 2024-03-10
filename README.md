@@ -4,7 +4,7 @@ Simple Library for fine tuning a gpt2 model on text data, particularly twitter t
 
 ### Create a datset like this
 
-```
+```python
     tweet_dataset = Dataset('tweet_data.csv')
     tweet_dataset.clean_data(Links = True, hashtags = False, mentions = False)
 
@@ -13,7 +13,7 @@ Simple Library for fine tuning a gpt2 model on text data, particularly twitter t
 
 ### Train your GPT2 Model like this
 
-```
+```python
     model = model('model1')
     model.init_data_loader(tweets)
     model.init_optimizer()
